@@ -3,20 +3,20 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 echo "
 +----------------------------------------------------------------------
-| Bt-WebPanel 3.0 FOR CentOS beta
+| ShackerPanel 1.0 FOR CentOS
 +----------------------------------------------------------------------
-| Copyright (c) 2015-2017 BT-SOFT(http://www.bt.cn) All rights reserved.
+| Copyright (c) 2015-2017 Shacker All rights reserved.
 +----------------------------------------------------------------------
 | Python2.6/2.7 successful the http://SERVER_IP:8888 is WebPanel
 +----------------------------------------------------------------------
 "
 
-download_Url='http://download.bt.cn'
+download_Url='http://github.com/heidi-luong1109/shackerpanel'
 setup_patn=/www
 
 while [ "$go" != 'y' ] && [ "$go" != 'n' ]
 do
-	read -p "Now do you want to install Bt-Panel to the $setup_patn directory?(y/n): " go;
+	read -p "Now do you want to install Shacker-Panel to the $setup_patn directory?(y/n): " go;
 done
 
 if [ "$go" == 'n' ];then
@@ -225,7 +225,7 @@ curl http://www.bt.cn/Api/SetupCount?type=Linux
 echo "====================================="
 echo -e "\033[32mThe install successful!\033[0m"
 echo -e "====================================="
-echo -e "Bt-Panel: http://$address:8888"
+echo -e "Shacker-Panel: http://$address:8888"
 echo -e "username: admin"
 echo -e "password: $password"
 echo -e "====================================="
